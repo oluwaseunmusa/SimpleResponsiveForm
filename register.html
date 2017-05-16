@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple HTML Form</title>
+        <meta name="viewport" content="width=device-width">
+        <style>
+
+            * {
+                -moz-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                margin: 0;
+            }
+
+            body {
+
+                background: tomato;
+            }
+
+        .main-content {
+
+            width: 298px;
+            height: auto;
+            margin: 10px auto;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        .login-container {
+
+            border-bottom: 1px  tomato solid;
+            text-align: left;
+            font-size: 20px;
+            padding: 15px;
+            font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+             color: #8a97a0;
+        }
+
+    .user-container {
+        border-bottom: 1px  tomato solid;
+        padding: 15px;
+    } 
+
+.submit-container {
+
+    padding: 15px;
+}
+form {
+
+    width: 100%;
+    height: auto;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}  
+
+.input-format, button {
+
+    width: 100%;
+    padding: 10px;
+    display: block;
+    font-size: 15px;
+    margin: 20px auto;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    box-shadow: none;
+
+}
+
+select {
+
+    color: #8a97a0;
+    margin-top: 10px;
+
+}
+
+input::placeholder  {
+
+    color: #8a97a0;
+}
+
+button {
+
+    text-align: center;
+    color: #fff;
+    background: #3b5998;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+label {
+
+    font-weight: normal;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    color: #8a97a0;
+}
+
+input[type="checkbox"]:focus + label {
+	font-weight: bold;
+	}
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+
+
+    }
+
+ p {
+        font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: #8a97a0;
+        font-size: 1em;
+        text-align: center;
+
+    }
+
+    a:link {
+        text-decoration: none;
+        color:#8a97a0;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color:#8a97a0;
+    }
+   </style>
+    </head>
+
+<body>
+    <!--form Begin -->
+    <div class="main-content">
+        <div class="login-container"> Signup</div>
+            <form action="index.html" method="post">
+                    <!-- User details-->
+                    <div class="user-container">
+                        
+                        <input class="input-format" type="name" id="name" name="user_name" placeholder="Full Name">
+                        <input class="input-format" type="email" id="email" name="user_email" placeholder="Email">
+                        <input class="input-format" type="password" id="password" name="user_password" placeholder="Password">
+                        <label for="job">Jobe Role:</label>
+                    <select class="input-format" id="job" for="job_role">
+                        <optgroup label="Developer">
+                            <option value="front-end developer">Front-End Developer</option>
+                            <option value="back-end developer">Back-End Developer</option>
+                            <option value="full-stack developer">Full-Stack Developer</option>
+                            <option value="android developer">Android Developer</option>
+                            <option value="ios developer">iOS Developer</option>
+                            <option value="python developer">Python Developer</option>
+                            <option value="rails developer">Rails Developer</option>
+                            <option value="web developer">Web Developer</option>
+                            <option value="wordpress developer">Wordpress Developer</option>
+                            <option value="php developer">Php Developer</option>
+                        </optgroup>
+
+                        <optgroup label="Designer">
+                            <option value="front-end developer">Graphic Designer</option>
+                            <option>Mobile Designer</option>
+                            <option>Web Designer</option>
+                            <option>UI/UX Designer</option>
+                            <option>Product Designer</option>
+                        </optgroup>
+                    </select>
+                    </div>
+
+                  <div class="submit-container">
+                        <button class="input-format" id="gmail" style="background-color:tomato;"> Signup</button>
+                       <p>Signup with facebook</p>
+                        <button class="input-format" id="password"> Signup with Facebook</button>
+                    </div>
+                    
+            
+            </form>
+</div>
+    <!--form End -->
+</body>
+</html>

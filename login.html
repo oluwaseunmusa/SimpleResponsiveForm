@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple HTML Form</title>
+        <meta name="viewport" content="width=device-width">
+        <style>
+
+            * {
+                -moz-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                margin: 0;
+            }
+
+            body {
+
+                background: tomato;
+            }
+
+        .main-content {
+
+            width: 298px;
+            height: auto;
+            margin: 10px auto;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        .login-container {
+
+            border-bottom: 1px  tomato solid;
+            text-align: left;
+            font-size: 20px;
+            padding: 15px;
+            font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+             color: #8a97a0;
+        }
+
+    .user-container {
+        border-bottom: 1px  tomato solid;
+        padding: 15px;
+    } 
+
+.submit-container {
+
+    padding: 15px;
+}
+form {
+
+    width: 100%;
+    height: auto;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}  
+
+.input-format, button {
+
+    width: 100%;
+    padding: 10px;
+    display: block;
+    font-size: 15px;
+    margin: 20px auto;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    box-shadow: none;
+
+}
+
+input::placeholder  {
+
+    color: #8a97a0;
+}
+
+button {
+
+    text-align: center;
+    color: #fff;
+    background: #3b5998;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+label {
+
+    font-weight: normal;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    padding-left: 5px;
+    color: #8a97a0;
+}
+
+input[type="checkbox"]:focus + label {
+	font-weight: bold;
+	}
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        text-decoration: none;
+        color:#8a97a0;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color:#8a97a0;
+    }
+        p {
+        font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: #8a97a0;
+        font-size: 1em;
+        text-align: center;
+
+    }
+   </style>
+    </head>
+
+<body>
+    <!--form Begin -->
+    <div class="main-content">
+        <div class="login-container"> Login</div>
+            <form action="register.html" method="post">
+                    <!-- User details-->
+                    <div class="user-container">
+                        
+                        <input class="input-format" type="email" id="email" name="user_email" placeholder="Email">
+                        <input class="input-format" type="password" id="password" name="user_password" placeholder="Password">
+						<input type="checkbox" id="checkbox" value="Remember Me"><label for="checkbox">Remeber Me</label>
+                    </div>
+
+                  <div class="submit-container">
+                        <button class="input-format" id="gmail" style="background-color:tomato;"> Login</button>
+                        <button class="input-format" id="password"> Login with Facebook</button>
+                        <p>Are you new? <a href="register.html">Register</a></p><br />
+                        <p>Forgot Password? <a href="reset.html">Reset</a></p>
+                        
+                    </div>
+                    
+            
+            </form>
+</div>
+    <!--form End -->
+</body>
+</html>
